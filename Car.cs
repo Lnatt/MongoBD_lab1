@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using MongoDB.Bson;
@@ -21,7 +22,7 @@ namespace MongoBD_lab1
         [BsonElement("year")]
         public int Year { get; set; }
 
-        [BsonElement("car_option")]
-        public Array Car_options { get; set; }
+        [BsonElement("car_options")]
+        public ICollection Car_options { get; set; }
     }
 }

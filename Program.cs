@@ -47,7 +47,10 @@ namespace MongoBD_lab1
                             //604d01cfb33b7b4edc767653
                             foreach (var user in typedId)
                             {
-                                Console.WriteLine(user.Color);
+                                foreach (var u in user.Car_options)
+                                {
+                                    Console.WriteLine(u);
+                                }
                             }
                         }
                     }
